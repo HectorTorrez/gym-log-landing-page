@@ -1,0 +1,26 @@
+{
+  "name": "gym-log-lading-page",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.7.0",
+    "@astrojs/tailwind": "^5.1.0",
+    "astro": "^4.8.6",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^7.10.0",
+    "eslint": "^9.3.0",
+    "eslint-plugin-astro": "^1.2.0"
+  }
+
+}
