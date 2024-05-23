@@ -7,7 +7,7 @@ export default defineConfig({
   integrations: [tailwind()],
   site: `https://www.gymLog-lading-page.com`,
   output: "static",
-  outDir: "./docs",
+  outDir: "./dist",
   build: {
     assets: "astro",
   },
