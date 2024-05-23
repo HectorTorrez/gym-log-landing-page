@@ -25,10 +25,10 @@ const { title, subtitle, href, isWeb, webHref } = Astro.props;
   <div>
     <p
       class={isWeb
-        ? " flex items-center gap-2 justify-center font-medium text-[18px]"
+        ? " flex items-center gap-2 justify-center font-medium text-[18px] text-blue-400"
         : "flex flex-col items-center font-semibold text-[18px]"}
     >
-      <span class="font-thin text-[14px]">{subtitle}</span>
+      <span class="font-thin text-[14px] text-white">{subtitle}</span>
       {title}
     </p>
   </div>

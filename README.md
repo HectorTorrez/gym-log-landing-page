@@ -19,4 +19,4 @@ To use the Gym Log application, follow these steps:
 
 ## Usage
 
-Once the application is running, you can access it by visiting `http://localhost:3000` in your web browser. Follow the on-screen instructions to create an account and start logging your workouts.
+Once the application is running, you can access it by visiting `http://localhost:4321` in your web browser. Follow the on-screen instructions to create an account and start logging your workouts.
