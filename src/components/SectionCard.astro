@@ -1,0 +1,27 @@
+---
+interface Props {
+  title: string;
+  subtitle: string;
+  href?: string;
+  className?: string;
+  imgClassName?: string;
+  children?: any;
+}
+const { href, className, title, subtitle, imgClassName, children } =
+  Astro.props;
+---
+
+<section class={className} title={title}>
+  <section>
+    <p class="font-semibold text-[30px] text-start">{title}</p>
+    <p class="text-[#667085]">{subtitle}</p>
+  </section>
+
+  {
+    href && (
+      <article class={imgClassName}>
+        <img src={href} alt={title} />
+      </article>
+    )
+  }
+</section>

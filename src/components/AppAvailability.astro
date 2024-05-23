@@ -1,30 +1,35 @@
 ---
 interface Props {
-    title: string;
-    subtitle: string;
-    href?: string;
-    isWeb: boolean;
+  title: string;
+  subtitle: string;
+  href?: string;
+  isWeb: boolean;
+  webHref: string;
 }
 
-const {title, subtitle, href, isWeb} = Astro.props;
+const { title, subtitle, href, isWeb, webHref } = Astro.props;
 ---
 
-<section class="bg-black max-w-[132px] w-full p-1 rounded-md text-white">
-    {
-        href && (
-                    <article>
-                        <img src={href} alt={title}/>
-                    </article>
-        )
-    }
-    <section>
-        <p
-                class={isWeb
-                    ? " flex items-center gap-5 justify-center font-bold text-[18px]"
-                    : "flex flex-col items-center font-bold text-[18px]"}
-        >
-            <span class="font-thin text-[14px]">{subtitle}</span>
-            {title}
-        </p>
-    </section>
-</section>
+<a
+  href={webHref}
+  target="_blank"
+  class="bg-black max-w-[132px] w-full p-1 rounded-md text-white"
+>
+  {
+    href && (
+      <article>
+        <img src={href} alt={title} />
+      </article>
+    )
+  }
+  <div>
+    <p
+      class={isWeb
+        ? " flex items-center gap-2 justify-center font-medium text-[18px]"
+        : "flex flex-col items-center font-semibold text-[18px]"}
+    >
+      <span class="font-thin text-[14px]">{subtitle}</span>
+      {title}
+    </p>
+  </div>
+</a>
