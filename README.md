@@ -13,7 +13,7 @@ Welcome to the Gym Log Landing Page! This landing page serves as an introduction
 
 To use the Gym Log application, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/gym-log.git`
+1. Clone the repository: `git clone git@github.com:HectorTorrez/gym-log-landing-page.git`
 2. Install the necessary dependencies: `npm install`
 3. Start the application: `npm start`
 
