@@ -5,10 +5,8 @@ interface Props {
   href?: string;
   className?: string;
   imgClassName?: string;
-  children?: any;
 }
-const { href, className, title, subtitle, imgClassName, children } =
-  Astro.props;
+const { href, className, title, subtitle, imgClassName } = Astro.props;
 ---
 
 <section class={className} title={title}>
